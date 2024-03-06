@@ -1,0 +1,23 @@
+import React, {useContext} from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { Context } from "../globalContext/globalContext";
+import containers from "../styles/containers";
+import fonts from "../styles/fonts";
+import buttons from "../styles/buttons";
+
+function Home({navigation, route, props}) {
+
+    const globalContext = useContext(Context);
+    const {isLoggedIn, appSettings} = globalContext;
+
+
+    return (
+        <View style={containers(appSettings).outerPage}>
+            <Text style={fonts(appSettings).h1}>Hello User!</Text>
+            <Text style={fonts(appSettings).h1}>YOU ARE HOME</Text>
+            <Text style={fonts(appSettings).p}>You are {(isLoggedIn)? '': "Not"} logged in</Text>
+        </View>
+    )
+}
+
+export default Home;
