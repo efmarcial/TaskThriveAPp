@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "TaskThriveApp",
-    "slug": "TaskThriveApp",
+    "slug": "task-thrive",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow TaskThriveApp to access your face ID biometric data."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bd1ee4b7-d816-401c-a037-72d698aab9c6"
+      }
+    },
+    "owner": "efmarcial1060"
   }
 }

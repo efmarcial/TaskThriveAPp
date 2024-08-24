@@ -24,6 +24,11 @@ const fonts = (appSettings) => StyleSheet.create({
         fontSize: 12,
         width: "100%",
         margin: 0,
+    },
+    errorLable: {
+        width: "100%",
+        textAlign: "center",
+        color: "pink",
     }
 
 });

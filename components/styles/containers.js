@@ -3,7 +3,16 @@ import { StyleSheet, Dimensions } from "react-native";
 
 
 const containers = (appSettings) => StyleSheet.create({
+    main_container: {
+        flex:1,
+        padding: 10,
+        backgroundColor: "#fff",
 
+    },
+    main_text: {
+        fontSize: 30,
+        fontWeight: 'bold',
+    },
     outerPage: {
         backgroundColor: ("backgroundColor" in appSettings)?appSettings['backgroundColor'] : "#ffffff",
         color: ("foregroundColor" in appSettings)?appSettings['foregroundColor'] : "#000000",
