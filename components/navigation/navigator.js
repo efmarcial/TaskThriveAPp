@@ -94,11 +94,19 @@ function Navigator(props) {
             )}
 
             {!isLoading && isLoggedIn && (
+                <>
                 <Stack.Screen
                     name="Home"
                     component={Home}
                     options={{ headerShown: false }}
                 />
+                <Stack.Screen
+                    name="Profile"
+                    component={Profile}
+                    options={{headerShown: true}}
+                />
+                </>
+                
             )}
 
             {/* Define other screens as needed */}
